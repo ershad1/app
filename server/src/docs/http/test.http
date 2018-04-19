@@ -1,0 +1,117 @@
+POST http://localhost:8080/api/authenticate
+Content-Type: application/json
+
+{
+    "username": "ershad",
+    "password" : "123456"
+}
+
+###
+
+GET http://localhost:5000/users/search/findByOrganizationIdAndRoleLabel?id=1&name=MANAGER
+Content-Type: application/json
+
+###
+
+GET http://localhost:5000/users/search/findByOrganizationId?id=2
+
+###
+
+GET http://localhost:5000/organizations/search/findById?id=1&projection=organizationProjection
+
+###
+
+
+GET http://localhost:8080/api/userLogin/auth?username=ershad&password=123456
+###
+
+GET http://localhost:8080/login?username=admin&password=frog
+
+###
+
+GET http://localhost:8080/search/participantInfos/findByOrganizationId?id=1
+Content-Type: application/json
+
+###
+GET http://localhost:8080/participantInfo/search/findByMacId?macId=1
+
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/participantInfos/search/findByOrganizationId?id=1
+
+###
+
+GET http://localhost:8080/participantInfoes/search/findByOrganizationId?id=1
+
+
+###
+
+POST http://192.168.0.171:8080/api/organization
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+GET http://192.168.0.171:8080/api/
+
+###
+
+
+POST http://192.168.100.98:8080/api/participantRegistration/save
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+POST http://192.168.100.98:8080/api/participantLog/save
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+GET http://localhost:8080/api/participants/search/findByUserOrganizationId?id=1
+
+
+###
+GET http://localhost:8080/api/participant/getdata?bangleId=2
+
+###
+
+GET http://localhost:8080/api/participantDataReports/search/
+
+
+###
+
+GET http://localhost:8080/api/
+
+###
+GET http://localhost:8080/api/participants/search/
+
+###
+
+GET http://localhost:8080/api/participantDatas/search/findByMamaMsgPlayAndParticipantId?id=1&participantId=2
+
+###
+
+GET http://localhost:8080/api/users/1?projection=userProjection
+
+###
+
+GET http://localhost:8080/api/mamaMessageTranslations/search/findByAppLanguageIdAndMamaMessageId?languageId=15&messageId=1
+
+###
+
+GET http://localhost:8080/api/users/3?projection=userProjection
+
+###

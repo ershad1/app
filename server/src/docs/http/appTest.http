@@ -1,0 +1,16 @@
+GET http://192.168.100.98:8080/api/participantInfo/getData?macId=f2cb:724:e:f&portalUserId=3
+
+###
+
+INSERT INTO coeldata.organization_bangle (id, bangle_id, is_used, mac_id, organization_id) VALUES (1, '12235', false, 'f2cb:724:e:f', 1);
+
+INSERT INTO coeldata.participant_info (id, is_used, last_menstruation_cycle, mama_message_time, participant_address, participant_age, participant_name, organization_id, organization_bangle_id, user_id) VALUES (2, false, '2018-01-04', '09:12:45', 'mohakhakl dhaka', 30, 'rahima khatun', null, null, 3);
+
+
+POST http://192.168.100.202:8080/coeldata/api/userLogin/auth
+Content-Type: application/json
+
+{
+    "username": "user",
+    "password" : "frog"
+}
